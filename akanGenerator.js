@@ -1,12 +1,18 @@
 function generateName() {
     var date = document.getElementById("birthday").value;
-    var list_gender = document.getElementsByName("gender");
     // Get the value of the selected button
     var gender = document.querySelector('input[name="gender"]:checked').value;
-    // for(i=0;i<=list_gender.length;i++){
-    //   if(list_gender[i].ariaChecked){
-    //     var gender = list_gender[i].value;
-    //   }
-    // }
-    console.log("Datetetet"+gender);
+
+    //Convert date into a date object
+    var bdate = new Date(date);
+
+    var MM = bdate.getMonth()+1;
+    var DD = bdate.getDate();
+    var YY = bdate.getFullYear();
+
+    console.log("Gender is "+gender);
+    console.log("Date is "+ bdate);
+    console.log("Month is "+MM);
+    console.log("Day is "+DD);
+    console.log("Year is "+YY);
   }
