@@ -1,3 +1,4 @@
 function generateName() {
-    document.getElementById("demo").innerHTML = "Paragraph changed.";
+    var date = document.getElementById("birthday").value;
+    console.log("Datetetet"+date);
   }

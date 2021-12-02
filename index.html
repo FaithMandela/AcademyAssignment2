@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html>
     <body>
-        <h1 id="demo">Akan Name Generator</h1>
-        <p id="demo">A Paragraph.</p>
+        <h1>Akan Name Generator</h1>
         <form action="/getName" method="post" id="getAkanName">
-            <label for="fname">Enter Birth Date:</label><br>
+            <label for="bdate">Enter Birth Date:</label><br>
             <input type="date" id="birthday" name="birthday"></form><br>
-            <label for="lname">Choose Gender:</label><br><small></small>
-            <input type="radio" id="html" name="gender" value="HTML">
+            
+            <label for="gender">Choose Gender:</label><br><small></small>
+            <input type="radio" id="gender" name="gender" value="HTML">
             <label for="html">Female</label>
             <input type="radio" id="css" name="gender" value="CSS">
             <label for="css">Male</label><br><br>
 
             <button type="button" onclick="generateName()">Generate Name</button>
         </form>
-        <!-- <script src="js/app.js"></script> -->
-        <script src="myScript.js"></script>
+        <script src="akanGenerator.js"></script>
     </body>
 </html>
