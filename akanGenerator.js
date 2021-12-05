@@ -14,7 +14,6 @@ function generateName() {
     var CC = Math.floor(YY1/100);
 
     //Day of the week (d) = ( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) mod 7
-    //console.log(new Date().getFullYear().toString().substr(-2));
     var dayBorn = ( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD )%7;
 
     const femaleNames = ["Akosua", "Adwoa", "Abenaa","Akua","Yaa","Afua","Ama"];
@@ -30,12 +29,12 @@ function generateName() {
 
     //alert("You were born on "+Math.floor(dayBorn));
 
-    console.log("Gender is "+gender);
-    console.log("Date is "+ bdate);
-    console.log("Month is "+MM);
-    console.log("Day is "+DD);
-    console.log("Year is "+YY);
-    console.log("YY1 is "+YY1)
-    console.log("Century is "+CC);
-    console.log("Day born is "+dayBorn);
+    // console.log("Gender is "+gender);
+    // console.log("Date is "+ bdate);
+    // console.log("Month is "+MM);
+    // console.log("Day is "+DD);
+    // console.log("Year is "+YY);
+    // console.log("YY1 is "+YY1)
+    // console.log("Century is "+CC);
+    // console.log("Day born is "+dayBorn);
   }

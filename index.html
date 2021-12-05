@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <link rel="stylesheet" href="mystyle.css">
+    </head>
     <body>
-        <h1>Akan Name Generator</h1>
-        <p>Select your birth date and gender to get your Akan Name generated</p>
-        <form action="/getName" method="post" id="getAkanName">
+        <div class="content">
+            <h1>Akan Name Generator</h1>
+            <p>Select your birth date and gender to get your Akan Name generated</p>
+            <form action="/getName" method="post" id="getAkanName">
             <label for="bdate">Enter Birth Date:</label><br>
             <input type="date" id="birthday" name="birthday"></form><br>
             <label for="gender">Choose Gender:</label><br><small></small>
@@ -15,6 +19,7 @@
 
             <button type="button" onclick="generateName()">Generate Name</button>
         </form>
+        </div>
         <script src="akanGenerator.js"></script>
     </body>
 </html>
