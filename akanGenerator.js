@@ -17,6 +17,11 @@ function generateName() {
     //console.log(new Date().getFullYear().toString().substr(-2));
     var dayBorn = ( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD )%7;
 
+    const femaleNames = ["Akosua", "Adwoa", "Abenaa","Akua","Yaa","Afua","Ama"];
+
+    const maleNames = ["Kwasi", "Kwadwo", "Kwabena","Kwaku","Yaw","Kofi","Kwame"];
+    
+
     alert("You were born on "+dayBorn)
 
     console.log("Gender is "+gender);
