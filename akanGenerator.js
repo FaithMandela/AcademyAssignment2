@@ -20,9 +20,15 @@ function generateName() {
     const femaleNames = ["Akosua", "Adwoa", "Abenaa","Akua","Yaa","Afua","Ama"];
 
     const maleNames = ["Kwasi", "Kwadwo", "Kwabena","Kwaku","Yaw","Kofi","Kwame"];
-    
 
-    alert("You were born on "+dayBorn)
+    if(gender=="Female"){
+      alert("Your Akan name is "+femaleNames[Math.floor(dayBorn)]);
+    }else{
+      alert("Your Akan name is "+maleNames[Math.floor(dayBorn)]);
+    }
+
+
+    //alert("You were born on "+Math.floor(dayBorn));
 
     console.log("Gender is "+gender);
     console.log("Date is "+ bdate);
