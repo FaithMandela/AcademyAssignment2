@@ -41,3 +41,7 @@ function generateName() {
 
     
   }
+
+  function clearForm(){
+    document.getElementById("getAkanName").reset();
+  }
